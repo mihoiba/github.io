@@ -185,7 +185,6 @@
     text-shadow: 0 2px 20px rgba(0,0,0,.9);
     max-height: 74vh;
   }
-  .poem .dim { color: var(--mute); }
 
   .cta {
     display: inline-flex;
@@ -433,15 +432,15 @@
     }
     .poem {
       writing-mode: horizontal-tb;
-      position: static;
+      top: clamp(5.5rem, 15vh, 8rem);
+      left: var(--pad);
+      right: auto;
+      max-width: min(80%, 21rem);
       max-height: none;
-      order: -1;
-      letter-spacing: .1em;
-      line-height: 1.9;
-      font-size: .9rem;
-      margin-bottom: .4rem;
+      letter-spacing: .12em;
+      line-height: 2;
+      font-size: .95rem;
     }
-    .poem br { display:none; }
     .info { grid-template-columns: 1fr; }
     .info dt { border-top: 1px solid var(--line); padding-bottom: 0; }
     .info dd { padding-top: .4rem; }
@@ -471,12 +470,7 @@
 <section class="hero">
   <div class="hero__img" aria-hidden="true"></div>
 
-  <p class="poem" aria-hidden="true">
-    翡翠色の蓮の葉の上で、<br />
-    一匹の蜘蛛が糸を紡いでいる。<br />
-    <span class="dim">この糸に縋りついて、どこまでものぼって行けば、</span><br />
-    <span class="dim">きっと地獄からぬけ出せるのに相違ございません。</span>
-  </p>
+  <p class="poem" aria-hidden="true">翡翠色の蓮の葉の上で、<br />一匹の蜘蛛が糸を紡いでいる。</p>
 
   <div class="wrap hero__inner">
     <div class="hero__top anim d1">
